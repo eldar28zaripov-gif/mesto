@@ -58,10 +58,12 @@
     <div class="popup__content">
       <button type="button" class="popup__close"></button>
       <h3 class="popup__title">Редактировать профиль</h3>
-      <form class="popup__form" name="edit-profile">
-        <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" required>
-        <input type="text" name="description" class="popup__input popup__input_type_description" placeholder="Занятие" required>
-        <button type="submit" class="button popup__button">Сохранить</button>
+      <form class="popup__form" name="edit-profile" novalidate>
+        <input id="profile-name-input" type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" minlength="2" maxlength="40" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required>
+        <span id="profile-name-input-error" class="popup__error"></span>
+        <input id="profile-description-input" type="text" name="description" class="popup__input popup__input_type_description" placeholder="Занятие" minlength="2" maxlength="200" required>
+        <span id="profile-description-input-error" class="popup__error"></span>
+        <button type="submit" class="button popup__button popup__button_disabled" disabled>Сохранить</button>
       </form>
     </div>
   </div>
@@ -85,10 +87,12 @@
     <div class="popup__content">
       <button type="button" class="popup__close"></button>
       <h3 class="popup__title">Новое место</h3>
-      <form class="popup__form" name="new-place">
-        <input type="text" name="place-name" class="popup__input popup__input_type_card-name" placeholder="Название" required>
-        <input type="url" name="link" class="popup__input popup__input_type_url" placeholder="Ссылка на картинку" required>
-        <button type="submit" class="button popup__button">Создать</button>
+      <form class="popup__form" name="new-place" novalidate>
+        <input id="card-title-input" type="text" name="place-name" class="popup__input popup__input_type_card-name" placeholder="Название" minlength="2" maxlength="30" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required>
+        <span id="card-title-input-error" class="popup__error"></span>
+        <input id="card-link-input" type="url" name="link" class="popup__input popup__input_type_url" placeholder="Ссылка на картинку" required>
+        <span id="card-link-input-error" class="popup__error"></span>
+        <button type="submit" class="button popup__button popup__button_disabled" disabled>Создать</button>
       </form>
     </div>
   </div>
@@ -97,9 +101,10 @@
     <div class="popup__content">
       <button type="button" class="popup__close"></button>
       <h3 class="popup__title">Обновить аватар</h3>
-      <form class="popup__form" name="edit-avatar">
-        <input type="url" name="avatar" class="popup__input popup__input_type_avatar-url" placeholder="Ссылка на аватар" required>
-        <button type="submit" class="button popup__button">Сохранить</button>
+      <form class="popup__form" name="edit-avatar" novalidate>
+        <input id="avatar-link-input" type="url" name="avatar" class="popup__input popup__input_type_avatar-url" placeholder="Ссылка на аватар" required>
+        <span id="avatar-link-input-error" class="popup__error"></span>
+        <button type="submit" class="button popup__button popup__button_disabled" disabled>Сохранить</button>
       </form>
     </div>
   </div>
@@ -166,7 +171,7 @@
       <p class="popup__alt"></p>
   </div>
 </section> -->
-<script type="module" src="scripts/index.js"></script>
+<script type="module" src="src/scripts/index.js"></script>
 <template class="template">
   <li class="places__item card">
     <img class="card__image" alt="">

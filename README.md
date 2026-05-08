@@ -1,49 +1,24 @@
-<div id="mount">
+# Проект Mesto
 
-<div class="app">
+Интерактивный проект Mesto с рабочим API и валидацией форм.
 
-<div>
+## Команды
 
-</div>
+- `npm run dev` — запуск локального сервера разработки
+- `npm run build` — сборка проекта
+- `npm run deploy` — публикация на GitHub Pages
 
-<div class="page proficiency-page">
+## Структура
 
-<div class="Toastify">
+- `src/scripts/index.js` — точка входа приложения
+- `src/scripts/components/api.js` — запросы к серверу
+- `src/scripts/components/card.js` — создание карточек
+- `src/scripts/components/modal.js` — работа с модальными окнами
+- `src/scripts/components/validation.js` — универсальная валидация форм
 
-</div>
+## Ссылка на проект
 
-<div class="page__content">
-
-<div class="unified-sidebar__container">
-
-<!-- end list -->
-
- 
-
-
-<div class="section theory-viewer big-theory lesson__theory">
-
-<div class="section theory-viewer__blocking-layout-block theory-viewer__block theory-viewer__block_type_vertical-layout theory-viewer__block_layout">
-
-<div id="3d2a06ea-7ce4-431e-a3e9-fa5175caca7b" class="section theory-viewer__block theory-viewer__block_type_markdown">
-
-<div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
-
-# Проектная работа Mesto. Работа с сервером
-
-</div>
-
-</div>
-
-<div id="1bba0a2c-ca76-4de3-b048-9852c7bdef54" class="section theory-viewer__block theory-viewer__block_type_markdown">
-
-<div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
-
-<div class="paragraph">
-
-Мы подошли к финальной проектной работе всего курса. Волноваться не стоит — вы уже обладаете всеми навыками, чтобы её реализовать.
-
-</div>
+[https://eldar28zaripov-gif.github.io/mesto/](https://eldar28zaripov-gif.github.io/mesto/)
 
 <div class="paragraph">
 
