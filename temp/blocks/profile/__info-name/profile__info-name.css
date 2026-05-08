@@ -1,0 +1,52 @@
+.profile__info-name {
+    max-width: 294px;
+    margin: 22px auto 16px 0;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0em;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile__info-name {
+        font-size: 29px;
+        line-height: 33px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .profile__info-name {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile__info-name {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .profile__info-name {
+        text-align: center;
+        margin: 22px auto 16px auto;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .profile__info-name {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .profile__info-name {
+        margin: 0;
+        max-width: 189px;
+    }
+}

@@ -1,0 +1,77 @@
+.cards__item {
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+.cards__item-image {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 282px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+.cards__item-description {
+    justify-content: space-between;
+    padding: 25px 20px 25px 21px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    line-height: 29px;
+    font-weight: 900;
+    font-size: 24px;
+    display: flex;
+    margin: 0;
+  }
+  
+.cards__item-title {
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-style: normal;
+    line-height: 29px;
+    font-weight: 900;
+    overflow: hidden;
+    max-width: 215px;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+.cards__item-like {
+    background-image: url(../../../images/like.svg);
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    height: 19px;
+    width: 22px;
+    padding: 0;
+  }
+  
+.cards__item-like:hover {
+    opacity: 0.5;
+  }
+
+  .cards__item-number-likes {
+    font-style: normal;
+    text-align: center;
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 13px;
+    height: 13px;
+    width: 10px;
+    padding: 0;
+    margin: 0;
+  }

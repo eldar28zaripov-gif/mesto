@@ -1,0 +1,13 @@
+.cards__item {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    max-width: 282px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}

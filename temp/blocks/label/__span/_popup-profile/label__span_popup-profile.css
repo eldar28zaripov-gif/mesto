@@ -1,0 +1,10 @@
+.label__span_popup-profile {
+}
+
+@media screen and (max-width: 540px) {
+    .label__span_popup-profile {
+        width: 250px;
+        top:  -30px;
+        left: 22px;
+    }
+}

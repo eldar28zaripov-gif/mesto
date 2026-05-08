@@ -1,0 +1,10 @@
+.profile__group {
+    display: flex;
+}
+
+@media screen and (max-width: 390px) {
+    .profile__group {
+        justify-content: center;
+        margin: 0 auto 14px auto;
+    }
+}

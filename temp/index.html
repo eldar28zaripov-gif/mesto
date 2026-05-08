@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="pages/index.css">
+</head>
+
+<body class="body root">
+    <div class="page">
+
+<!-- header-->
+        <header class="header">
+            <a class="header__link" target="_self" href="#"><img class="header__logo" alt="Логотип место Россия." src="images/logo.svg"></a>
+        </header>
+
+<!-- main-->
+        <main class="content">
+
+<!-- profile-->
+            <section class="profile">
+                <img class="profile__avatar" alt="фото автора." src="images/myPhoto.jpg">
+
+                <div class="profile__info">
+                    <div class="profile__group">
+                        <h1 class="profile__info-name">Анастасия Шилина</h1>
+                        <button class="profile__open-button" type="button"><img alt="#" src="images/editButton.svg"></button>
+                    </div>
+                    <p class="profile__info-about">Исследователь Египта</p>
+                </div>
+
+                <button class="profile__add-button" type="button"><img class="profile__add-button-vector" alt="#" src="images/addButtonVector.svg"></button>
+            </section>
+
+<!-- elements-->
+            <section class="elements">
+                <ul class="cards">
+                </ul>
+            </section>
+        </main>
+
+<!-- footer-->
+        <footer class="footer">
+            <p class="footer__author">&copy;2020.Mesto Russia</p>
+        </footer>
+    </div>
+
+<!-- popups-->
+    <section class="popup popup-profile">
+        <form class="popup__form popup-profile__form" name="form" novalidate>
+            <button class="popup__btn-close popup-profile__btn-close" type="button"></button>
+            <h2 class="popup__header popup-profile__header">Редактировать профиль</h2>
+            <input id="input-name" class="popup__input input-name" name="name" type="text" placeholder="Имя" minlength="2" maxlength="40" autocomplete="off" required>
+            <label class="label">
+                <span id="input-name-error" class="error label__span label__span_popup-profile"></span>
+            </label>
+            <input id="input-about" class="popup__input input-about" name="about" type="text" placeholder="О себе" minlength="2" maxlength="200" autocomplete="off" required>
+            <label class="label">
+                <span id="input-about-error" class="error label__span label__span_popup-profile"></span>
+            </label>
+            <button class="popup__btn-submit popup-profile__btn-submit" type="submit">Сохранить</button>
+        </form> 
+    </section>
+
+    <section class="popup popup-add">
+        <form class="popup__form popup-add__form" name="form" novalidate>
+            <button class="popup__btn-close popup-add__btn-close" type="button"></button>
+            <h2 class="popup__header popup-add__header">Новое место</h2>
+            <input id="input-title" class="popup__input popup-add__input input-title" name="title" type="text" minlength="2" maxlength="30" placeholder="Название" autocomplete="off" required>
+            <label class="label">
+                <span id="input-title-error" class="error label__span"></span>
+            </label>
+            <input id="input-link" class="popup__input popup-add__input input-link" name="link" type="url" placeholder="Ссылка на картинку" autocomplete="off" required>
+            <label class="label">
+                <span id="input-link-error" class="error label__span"></span>
+            </label>
+            <button class="popup__btn-submit popup-add__btn-submit" type="submit">Создать</button>
+        </form>
+    </section>
+
+    <section class="popup popup-img">
+        <div class="popup__img-window">
+            <button class="popup__btn-close popup-img__btn-close" type="button"></button>
+            <img class="popup__image" alt="#" src="">
+            <p class="popup__alt"></p>
+        </div>
+    </section>
+    
+<!-- template-->
+    <template class="template">
+        <li class="cards__item card">
+            <button class="cards__btn-remove" type="button"></button>
+            <img class="cards__img" alt="#" src="">
+            <div class="cards__bottom">
+                <h3 class="cards__title"></h3>
+                <button class="cards__btn-like cards__like" type="button"></button>
+            </div>
+        </li>
+    </template>
+
+<!-- script-->
+    <script src="scripts/initial-cards.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/validate.js"></script>
+</body>
+</html>

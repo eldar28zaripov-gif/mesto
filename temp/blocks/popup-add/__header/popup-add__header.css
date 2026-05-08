@@ -1,0 +1,10 @@
+.popup-add__header {
+}
+
+@media screen and (max-width: 540px) {
+    .popup-add__header {
+        width: 185px;
+        font-size: 18px;
+        margin: 30px auto 36px auto;
+    }
+}

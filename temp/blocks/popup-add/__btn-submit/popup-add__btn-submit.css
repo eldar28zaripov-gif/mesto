@@ -1,0 +1,10 @@
+.popup-add__btn-submit {
+}
+
+@media screen and (max-width: 540px) {
+    .popup-add__btn-submit {
+        width: 200px;
+        height: 40px;
+        margin: 16px 20px 30px 20px;
+    }
+}

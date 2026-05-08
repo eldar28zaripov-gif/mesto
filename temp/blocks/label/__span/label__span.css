@@ -1,0 +1,14 @@
+.label__span {
+    width: 358px;
+    position: absolute;
+    top:  -25px;
+    left: 35px;
+}
+
+@media screen and (max-width: 540px) {
+    .label__span {
+        width: 210px;
+        top:  -15px;
+        left: 20px;
+    }
+}
